@@ -1,0 +1,21 @@
+/input/.autoupdate
+
+*.pyo
+*.pyc
+*.pkl
+
+# Packages
+/pythia-pgs.tgz
+/pythia-pgs
+/Delphes.tgz
+/Delphes
+/MadAnalysis.tgz
+/MadAnalysis
+/td
+/ExRootAnalysis.tgz
+/ExRootAnalysis
+/SysCalc.tgz
+/SysCalc
+/golem95.tgz
+/golem95
+
