@@ -18,4 +18,15 @@
 /SysCalc
 /golem95.tgz
 /golem95
+/HEPTools
+/vendor/CutTools/includects
+/vendor/IREGI/src/oneloop/avh_olo.f90
+/vendor/IREGI/src/**/*.o
+/vendor/IREGI/src/**/*.mod
+/vendor/IREGI/src/**/*.a
+/vendor/IREGI/src/**/*.so
+/vendor/StdHEP/**/*.o
+/vendor/StdHEP/**/*.mod
+/vendor/StdHEP/lib/*.a
+/vendor/StdHEP/lib/*.so
 
