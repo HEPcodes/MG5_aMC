@@ -19,6 +19,7 @@
 /golem95.tgz
 /golem95
 /HEPTools
+/Template/LO/Source/make_opts
 /vendor/CutTools/includects
 /vendor/IREGI/src/oneloop/avh_olo.f90
 /vendor/IREGI/src/**/*.o
