@@ -1,5 +1,15 @@
 Update notes for MadGraph5_aMC@NLO (in reverse time order)
 
+2.8.3.2 (02/02/21):
+      OM: Back porting a series of patch that was forgetten in 2.8.3
+      OM: Fixing a nasty bug introduce in 2.8.2 and related to a bug introduce in 2.6.4.
+          The resolution of the phase-space slicing in presence of Breit-Wigner conflict
+	  when followed by a massless propagator.
+	  example of processes impacted
+	  p p > z h , z > e+ e-, h > b b~ a
+	  cross-section can returned zero or worse be biased.
+      
+
 2.8.3 (26/01/21):
       OM: Buch of bunch fixing related to python3 issue (mainly related to unicode encoding)
       OM: Various fix for reweighting with loop (mainly with python3 as well)

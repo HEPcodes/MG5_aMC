@@ -123,9 +123,12 @@ c            write(*,*) 'Checking BW',nbw
 c            write(*,*) 'xmass',xmass,prmass(i,iconfig)
 c
 c           Here we set if the BW is "on-shell" for LesHouches
-c            
+c
+            if(prwidth(i,iconfig).ge.0) then
             prwidth_tmp(i,iconfig) = max(prwidth(i,iconfig), prmass(i,iconfig)*small_width_treatment)
- 
+            else
+            prwidth_tmp(i,iconfig) = 0d0
+            endif
             onshell = (abs(xmass - prmass(i,iconfig)) .lt.
      $           bwcutoff*prwidth_tmp(i,iconfig).and.
      $           (prwidth_tmp(i,iconfig)/prmass(i,iconfig).lt.0.1d0.or.
@@ -310,7 +313,11 @@ c     needs to be initialise to avoid segfault
 c      etmin = 10
       nt = 0
       do i = -nexternal,-1
+         if(prwidth(i,iconfig).gt.0d0) then
          prwidth_tmp(i,iconfig) = max(prwidth(i,iconfig), prmass(i,iconfig)*small_width_treatment)
+         else
+         prwidth_tmp(i,iconfig) = 0d0
+         endif
       enddo
 
 
