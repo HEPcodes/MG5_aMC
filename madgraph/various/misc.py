@@ -1503,6 +1503,10 @@ def sprint(*args, **opt):
 
     return 
 
+class misc(object):
+    @staticmethod
+    def sprint(*args, **opt):
+        return sprint(*args, **opt)
 ################################################################################
 # function to check if two float are approximatively equal
 ################################################################################
@@ -2258,6 +2262,9 @@ the file and returns last line in an internal buffer."""
             return line
         else:
             raise StopIteration
+def tqdm(iterator, **opts):
+    return iterator
+
         
 ############################### TRACQER FOR OPEN FILE
 #openfiles = set()
@@ -2282,3 +2289,5 @@ the file and returns last line in an internal buffer."""
 #    return newfile(*args)
 #__builtin__.file = newfile
 #__builtin__.open = newopen
+
+

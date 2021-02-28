@@ -954,7 +954,6 @@ class HelasWavefunction(base_objects.PhysicsObject):
             return False
         if self['mothers']:
             nb_t_channel= sum(int(wf.is_t_channel()) for wf in self['mothers'])
-            #raise Exception
         else:
             return True
             
